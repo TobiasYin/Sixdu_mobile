@@ -1,8 +1,13 @@
-# vue_pwa
+# Sixdu Mobile
 
-> A Vue.js project
+> This is a bbs like website.
+
+This web site use vue to build.
+link: [Sixdu](http://sixdu.top/)
+link: [Sixdu mobile](http://sixdu.top/mobile)
 
 ## Build Setup
+> If you want to use the code to setup your own website, you can use it like this.
 
 ``` bash
 # install dependencies
@@ -19,3 +24,6 @@ npm run build --report
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+### Url
+This website use axios to request datas. So I use the vuex to manage the main url. You can change it to your own. The global data is here:`/vuex/index.js`
