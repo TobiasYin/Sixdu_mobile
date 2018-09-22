@@ -6,6 +6,7 @@ This web site use vue to build.
 link: [Sixdu](http://sixdu.top/)
 link: [Sixdu mobile](http://sixdu.top/mobile)
 
+If you want to konw something about the destop page, you can click [here](https://github.com/TobiasYin/sixdu) to jump to that page.
 ## Build Setup
 > If you want to use the code to setup your own website, you can use it like this.
 
