@@ -12,11 +12,12 @@
     <div class="review title">技术相关</div>
     <div class="review"><p>本站移动端前端采用vue.js框架开发，后端采用python flask框架开发，找到了性能和效率的完美契合点，使用了一些开源的组件，感谢作者们。</p>
       <p>桌面端网站前端采用HTML+CSS+JavaScript技术开发,其中使用少量BootStrap组件.</p>
-      <p>当然这是一个大学生假期闲得慌做出来的小网站,网站的前端,后端,设计,素材均由一个人完成,所以可能会有各种各样的bug.如果你在使用过程中,不幸遇到了bug,你可以给我发邮件.点击Connect me.</p></div>
+      <p>当然这是一个大学生假期闲得慌做出来的小网站,网站的前端,后端,设计,素材均由一个人完成,所以可能会有各种各样的bug.如果你在使用过程中,不幸遇到了bug,你可以给我发邮件.点击Connect me.</p>
       <p>
         想要了解网站更多的细节，或者查看网站的源代码，可以点击<a href="https://github.com/TobiasYin/Sixdu_mobile" >here</a>前往github页面了解更多手机端前端详情和细节。
         点击<a href="https://github.com/TobiasYin/sixdu">here</a>可以了解更多服务器后端代码和电脑端页面的更多详情
       </p>
+    </div>
     <div class="review title">更新日志</div>
     <div class="review">
       <div class="time">2018-9-24</div>
