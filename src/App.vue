@@ -120,6 +120,7 @@
     },
     mounted() {
       let v = window.document.cookie.split('\\');
+      this.$store.commit('setUrl',window.location.origin);
       for (let i = 0; i < v.length; i++) {
         if (v[i] === 'isVisited=true') {
           this.needPopup = false;

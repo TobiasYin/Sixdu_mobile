@@ -18,6 +18,8 @@
         点击<a href="https://github.com/TobiasYin/sixdu">here</a>可以了解更多服务器后端代码和电脑端页面的更多详情
       </p>
     </div>
+    <div class="review title">备案许可</div>
+    <div class="review"><div style="text-align: center">津ICP备18008100号-1</div><div style="text-align: center">@copyright 2018 Tobias</div></div>
     <div class="review title">更新日志</div>
     <div class="review">
       <div class="time">2018-9-24</div>

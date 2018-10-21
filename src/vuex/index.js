@@ -23,6 +23,9 @@ export default new Vuex.Store({
       state.username = '';
       state.userID = ''
     },
+    setUrl(state, url) {
+      state.url = url
+    },
     setUsername(state, username) {
       state.username = username
     },
@@ -48,13 +51,13 @@ export default new Vuex.Store({
       state.userLikeArticles.push(likeId)
     },
     popUserLikeSecrets(state, index) {
-      state.userLikeSecrets.splice(index,1)
+      state.userLikeSecrets.splice(index, 1)
     },
     popUserLikeEssays(state, index) {
-      state.userLikeEssays.splice(index,1)
+      state.userLikeEssays.splice(index, 1)
     },
     popUserLikeArticles(state, index) {
-      state.userLikeArticles.splice(index,1)
+      state.userLikeArticles.splice(index, 1)
     },
   }
 });
