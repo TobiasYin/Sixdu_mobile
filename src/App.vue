@@ -120,7 +120,6 @@
     },
     mounted() {
       let v = window.document.cookie.split('\\');
-      this.$store.commit('setUrl',window.location.origin);
       for (let i = 0; i < v.length; i++) {
         if (v[i] === 'isVisited=true') {
           this.needPopup = false;
@@ -174,6 +173,9 @@
         d.setTime(d.getTime() + 24 * 60 * 60 * 1000);
         window.document.cookie = 'isVisited' + "=" + 'true\\' + ";path=/;expires=" + d.toGMTString();
       }
+    },
+    beforeCreate(){
+      this.$store.commit('setUrl',window.location.origin);
     }
   }
 </script>
