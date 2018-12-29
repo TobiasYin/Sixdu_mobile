@@ -70,33 +70,7 @@
       },
     },
     methods: {
-      //   loadMore() {
-      //     // if(this.$route.path==='/index'){
-      //     this.Loading = true;
-      //     Indicator.open('加载中...');
-      //     setTimeout(() => {
-      //       this.axios.get(this.url, {
-      //         params: {
-      //           'start': this.articleList.length + 1,
-      //           'end': this.articleList.length + 11
-      //         }
-      //       })
-      //         .then((response) => {
-      //           let tempData = response.data.ArticleList;
-      //           for (let i = 0; i < 10; i++) {
-      //             this.articleList.push(tempData[i]);
-      //           }
-      //           this.Loading = false;
-      //           Indicator.close();
-      //         })
-      //         .catch((error) => {
-      //           console.log(error);
-      //           Toast('加载失败');
-      //           Indicator.close();
-      //         });
-      //     }, 10);
-      //   }
-      // }
+      //点击我知道后的反应
       learned() {
         let d = new Date;
         d.setTime(d.getTime() + 24 * 60 * 60 * 1000);
@@ -128,7 +102,7 @@
       this.axios.get(this.url, {timeout: 2500})
         .then((resp) => {
           let temp = resp.data;
-          this.SecretItem={
+          this.SecretItem = {
             title: temp.SecretItem.title,
             content: temp.SecretItem.content,
             like: temp.SecretItem.like,
@@ -137,7 +111,7 @@
           };
           // this.SecretItem = temp.SecretItem;
           // this.ArticleItem=temp.ArticleItem;
-          this.ArticleItem={
+          this.ArticleItem = {
             title: temp.ArticleItem.title,
             author: temp.ArticleItem.author,
             authorID: temp.ArticleItem.authorID,
@@ -146,7 +120,7 @@
             time: temp.ArticleItem.time,
             id: temp.ArticleItem.id,
           };
-          this.EssayItem={
+          this.EssayItem = {
             author: temp.EssayItem.author,
             authorID: temp.EssayItem.authorID,
             content: temp.EssayItem.content,
@@ -190,7 +164,8 @@
     font-size: 20px;
     line-height: 20px;
   }
-  .review img{
+
+  .review img {
     width: 100%;
   }
 </style>

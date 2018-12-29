@@ -1,6 +1,4 @@
 <template>
-  <!--<index-layout selected="articles">-->
-  <!--<keep-alive>-->
   <ul
     v-infinite-scroll="loadMore"
     infinite-scroll-disabled="loading"
@@ -9,20 +7,15 @@
       <article-review :ArticleItem="item" :key="index" :index="index"></article-review>
     </li>
   </ul>
-  <!--</keep-alive>-->
-
-  <!--</index-layout>-->
 </template>
 
 <script>
-  // import IndexLayout from '../components/IndexLayout';
   import ArticleReview from '../components/ArticleReview';
   import {Indicator} from 'mint-ui';
   import {Toast} from 'mint-ui';
 
   export default {
     components: {
-      // IndexLayout,
       ArticleReview
     },
     name: "ArticlesPage",
@@ -31,7 +24,6 @@
         articleList: [],
         loading: true,
         noMore: false
-        // url: 'http://127.0.0.1:5000'
       }
     },
     computed: {

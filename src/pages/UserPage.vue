@@ -84,10 +84,6 @@
           Toast('网络连接错误，请检查网络连接后重试')
         })
     },
-    // beforeRouteLeave(){
-    //   this.$destroy();
-    //   next()
-    // }
   }
 </script>
 

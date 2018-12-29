@@ -140,9 +140,6 @@
             this.$store.commit('setUserLikeArticles', temp.likeArticles);
             this.$store.commit('setUserLikeEssays', temp.likeEssays);
             this.$store.commit('setUserLikeSecrets', temp.likeSecrets);
-            // console.log(this.$store.state.userLikeArticles);
-            // console.log(this.$store.state.userLikeEssays);
-            // console.log(this.$store.state.userLikeSecrets);
           } else {
             if (this.needPopup) {
               this.popupVisible = true;
@@ -152,11 +149,6 @@
             }
           }
         });
-      // var exp = new Date();
-      // exp.setTime(exp.getTime() - 1);
-      // var cval=getCookie(name);
-      // if(cval!=null)
-      //   document.cookie= name + "="+cval+";expires="+exp.toGMTString();
       let v = window.document.cookie.split('\\');
       let count = 0;
       for (let i = 0; i < v.length; i++) {

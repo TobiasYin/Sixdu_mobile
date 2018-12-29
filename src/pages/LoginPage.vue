@@ -35,15 +35,6 @@
       }
     },
     computed: {
-      // pageSize() {
-      //   console.log((this.innerH - 76 - 40 - 207) / 2);
-      //   return 'margin-top:' + (this.innerH - 76 - 40 - 207) / 2+'px';
-      // },
-      // innerH() {
-      //   return window.innerHeight
-      //     || document.documentElement.clientHeight
-      //     || document.body.clientHeight;
-      // }
       passwordState(){
         if(this.password.length<7&&this.password.length!==0){
           return 'error'
@@ -75,7 +66,6 @@
           },{timeout:2500})
             .then((resp)=>{
               Indicator.close();
-              // console.log(resp.data);
               let temp=resp.data;
               if(resp.data.isLogin){
                 Toast('登陆成功');

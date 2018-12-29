@@ -1,5 +1,4 @@
 <template>
-  <!--<index-layout selected="mine">-->
   <keep-alive>
     <div v-if="isLogin">
       <div class="review">
@@ -57,18 +56,15 @@
       <hr>
     </div>
   </keep-alive>
-  <!--</index-layout>-->
 </template>
 
 <script>
-  // import IndexLayout from '../components/IndexLayout';
   import ArticleReview from '../components/ArticleReview';
   import {Indicator} from 'mint-ui';
   import {Toast} from 'mint-ui';
 
   export default {
     components: {
-      // IndexLayout,
       ArticleReview
     },
     name: "MinePage",
@@ -77,8 +73,6 @@
         articleList: [],
         essaysList: [],
         loading: true,
-        // url: 'http://127.0.0.1:5000',
-        // isLogin: false,
         selfIntro: '暂时没有签名，点击设置一个签名吧！'
       }
     },

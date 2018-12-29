@@ -34,7 +34,6 @@
         rePassword: '',
         checkCodeURL: '',
         checkCode: '',
-        // url: 'http://127.0.0.1:5000/api/register',
         MD5: '',
         checkCodeMD5: ''
 

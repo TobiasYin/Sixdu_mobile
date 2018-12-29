@@ -22,7 +22,6 @@
 
         <essay-review :ArticleItem="item" :key="index" :index="index" v-else></essay-review>
       </li>
-      <!--<essay-review :ArticleItem="item" :key="index" :index="index"></essay-review>-->
     </ul>
   </div>
 
@@ -101,7 +100,7 @@
         MessageBox.confirm('删除后将无法还原！', '确定删除吗？')
           .then(action => {
             Indicator.open('删除中，请稍等');
-            this.axios.get(this.$store.state.url + '/api/delete_essay/'+id)
+            this.axios.get(this.$store.state.url + '/api/delete_essay/' + id)
               .then(resp => {
                 Indicator.close();
                 if (resp.data.result) {
@@ -142,7 +141,7 @@
 </script>
 
 <style scoped>
-  .review img{
+  .review img {
     width: 100%;
   }
 </style>

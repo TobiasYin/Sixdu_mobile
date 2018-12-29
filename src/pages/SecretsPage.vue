@@ -1,6 +1,4 @@
 <template>
-  <!--<index-layout selected="articles">-->
-  <!--<keep-alive>-->
   <div class="page">
     <mt-header title="树洞空间">
       <mt-button icon="back" slot="left" style="line-height: 14px" @click="lastPage">返回</mt-button>
@@ -14,21 +12,15 @@
       </li>
     </ul>
   </div>
-
-  <!--</keep-alive>-->
-
-  <!--</index-layout>-->
 </template>
 
 <script>
-  // import IndexLayout from '../components/IndexLayout';
   import SecretReview from '../components/SecretReview';
   import {Indicator} from 'mint-ui';
   import {Toast} from 'mint-ui';
 
   export default {
     components: {
-      // IndexLayout,
       SecretReview
     },
     name: "SecretsPage",
@@ -37,7 +29,6 @@
         articleList: [],
         loading: true,
         noMore:false
-        // url: 'http://127.0.0.1:5000'
       }
     },
     computed: {

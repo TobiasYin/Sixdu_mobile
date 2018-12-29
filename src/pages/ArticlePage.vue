@@ -56,9 +56,7 @@
     data() {
       return {
         articleData: {},
-        // url: 'http://127.0.0.1:5000/article/' + this.$route.params.id,
         isLiked: false,
-        // isLogin: false,
         commentContent: '',
       }
     },
@@ -182,11 +180,6 @@
         }
       }, 500);
     },
-    // beforeRouteLeave(){
-    //   this.$destroy();
-    //   next()
-    // }
-
   }
 </script>
 

@@ -1,6 +1,4 @@
 <template>
-  <!--<index-layout selected="essays">-->
-  <!--<keep-alive>-->
     <ul
       v-infinite-scroll="loadMore"
       infinite-scroll-disabled="loading"
@@ -9,20 +7,15 @@
         <essay-review :ArticleItem="item" :key="index" :index="index"></essay-review>
       </li>
     </ul>
-  <!--</keep-alive>-->
-
-  <!--</index-layout>-->
 </template>
 
 <script>
-  // import IndexLayout from '../components/IndexLayout';
   import EssayReview from '../components/EssayReview';
   import {Indicator} from 'mint-ui';
   import {Toast} from 'mint-ui';
 
   export default {
     components: {
-      // IndexLayout,
       EssayReview
     },
     name: "EssaysPage",
@@ -31,7 +24,6 @@
         articleList: [],
         loading: true,
         noMore:false
-        // url: 'http://127.0.0.1:5000'
       }
     },
     computed: {
@@ -83,12 +75,6 @@
           Toast('网络连接失败，请检查网络连接后再试');
         });
     },
-    // beforeRouteUpdate() {
-    //   if (this.$route.path !== '/essays') {
-    //     this.loading = true
-    //   }
-    // }
-
   }
 </script>
 
